@@ -3,4 +3,3 @@
 set -eu
 
 EXAMPLE="kraw"
-DO_CIL_PATCH="YES" # use "YES" to run; without will not produce any ratings, but at least it breaks free from dirty patching

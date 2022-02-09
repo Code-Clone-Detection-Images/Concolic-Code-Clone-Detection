@@ -6,6 +6,10 @@ USER root
 
 # https://github.com/erimcg/ChewTPTP/tree/master/ChewTPTP
 ARG YICES=yices-1.0.13-x86_64-pc-linux-gnu.tar.gz
+ARG JAVA_TARGET=java-1.8.0-openjdk-devel.x86_64
+# we are roooooot
+ARG OCAML_VERSION=3.09.0 HOME_FOLDER=/home/fedora-user
+
 # ARG GMP=gmp-4.2.2.tar.gz
 
 COPY setup-fedora.sh varsrc /
@@ -30,6 +34,10 @@ RUN rm /setup-ctags.sh
 COPY setup-cccd.sh offline/cccd.zip /
 RUN chmod +x /setup-cccd.sh && /setup-cccd.sh
 RUN rm /setup-cccd.sh
+
+
+# use "YES" to run (anything else will be false); without will not produce any ratings, but at least it breaks free from dirty patching
+ARG DO_CIL_PATCH="YES"
 
 # The goal is to have all downloads to be completed here (except for the yices installer shell script. This
 # May be a todo)
@@ -58,3 +66,6 @@ RUN rm /cleanup.sh
 
 # USER fedora-user # keep root for inspection
 CMD ["/bin/bash"]
+
+LABEL description="This image is used to get cccd running even though basically none of its dependencies are easily available today."
+LABEL url_ccd="https://web.archive.org/web/20150921003732/https://www.se.rit.edu/~dkrutz/CCCD/index.html?page=install"
