@@ -1,0 +1,183 @@
+#!/bin/bash
+
+### Author: Daniel Krutz
+### Description:
+###	Generates the concolic output using crest for all .c files in a ###given directory.
+###	Will also create a list methods using cTag in the target application.
+### Pre-reqs:
+#	Crest
+#	Ctag
+#	Java
+
+### Todo:
+# Tie into the correct folder structure
+# How to include the proper C_Include files
+	# ? Just do it externally
+	# ? Have an external file
+# If input file is not found, then exit the script
+# Create a dummy file structure to try this off
+	# ? Rons?
+# If not cil files created, then don't Run java
+	# Probably a good idea to make sure that enough of all file types are created
+
+
+##Usage
+# ./cccd <filename>
+
+
+source /varsrc
+
+# Point to the location of where crest is installed
+crestPath="$HOME_FOLDER/$CREST_FOLDER/bin/crestc"
+
+
+
+
+# Check to make sure that an argument is actually passed in
+EXPECTED_ARGS=1
+E_BADARGS=65
+
+if [ $# -ne $EXPECTED_ARGS ]
+then
+  echo "Usage: `basename $0` {arg}"
+  exit $E_BADARGS
+fi
+
+
+scriptOutputlocation=../sourceFiles/scriptoutput/
+scriptReportlocation=../sourceFiles/Reports/
+scriptInputlocation=../sourceFiles/input/
+
+appName=$1
+rootpathCtag=$scriptOutputlocation$appName"_copy"
+bashScriptLogName=$scriptOutputlocation$appName"_scriptLog.txt"
+javaReportName=$scriptReportlocation$appName"_Report.xls"
+ctagoutput=$scriptOutputlocation$appName"_copy_ctag_output"
+crestfileoutput=$scriptOutputlocation$appName"_copy_crestfiles"
+
+#echo $crestfileoutput
+#exit $E_BADARGS
+
+echo "Creating file structure......."
+
+### Create the proper folders
+
+# "input" should already exist
+
+# If not exist, create scriptoutput
+mkdir -p $scriptOutputlocation
+
+# If not exist, create Reports location
+mkdir -p $scriptReportlocation
+
+### Check to make sure that the source directory exists
+
+
+
+#### Copy over the necesssary source files
+
+rm -rf $scriptOutputlocation$appName"_copy"
+mkdir -p $scriptOutputlocation$appName"_copy"
+cp -r $scriptInputlocation$appName/* $scriptOutputlocation$appName"_copy"
+chmod 777 $scriptOutputlocation$appName"_copy"
+
+
+#### Create the ctag location
+
+rm -rf $ctagoutput
+mkdir -p $ctagoutput
+chmod 777 $ctagoutput
+
+#### Create the crest location
+
+rm -rf $crestfileoutput
+mkdir -p $crestfileoutput
+chmod 777 $crestfileoutput
+
+# Create the log information
+rm -f $bashScriptLogName
+touch $bashScriptLogName
+chmod 777 $bashScriptLogName
+
+### Make sure that all of the c_include files are added to the system
+
+
+echo "Creating Ctag and Crest Information......."
+
+FILES=$(find $scriptOutputlocation$appName"_copy" -type f -name '*.c')
+cnt=0
+for f in $FILES
+do
+	cnt=$((cnt + 1))
+	echo "doing for $cnt"
+	filename=$f
+
+	# create the ctag structure
+	fullpath=$(dirname $filename) # Can be removed with some prettier bash
+	mkdir -p $ctagoutput/${fullpath#${rootpathCtag}}
+	echo "folder: $ctagoutput/${fullpath#${rootpathCtag}}"
+
+	cmd="ctags -f  $ctagoutput/${fullpath#${rootpathCtag}}/$(basename $filename).txt  $(dirname $filename)/$(basename $filename) -x"
+	echo "running $cmd"
+	$cmd
+
+	## Create a method length information file to be analyzed by Java
+	## This can be cleaned up
+	echo "sedding"
+	sed '/^$/d'  $(dirname $filename)/$(basename $filename) > temp_output.c; ctags -x temp_output.c >  $ctagoutput/${fullpath#${rootpathCtag}}/$(basename $filename).methodinfo; rm temp_output.c
+
+	cmd="$crestPath $(dirname $filename)/$(basename $filename) -dfs 10 2>>$bashScriptLogName"
+	echo "other crest with $cmd"
+	$cmd
+
+	### Run crest on all of the files
+	# Would be nice to have all of the files initially output to their own main directory
+
+
+
+	## Put a space in the log output file
+
+	## Give a status of what is going on
+	echo "crest: "$cnt"/" $(dirname $filename)/$(basename $filename)
+
+done
+
+
+
+### Now move all the files to their appropriate directory
+mv *.cil.c $crestfileoutput/
+
+### Remove the unused files
+rm -f *.i
+rm -f branches
+rm -f cfg*
+rm -f funcount
+rm -f idcount
+rm -f stmtcount
+
+
+
+# Add more files to remove in here
+
+
+### Output the created number of files
+echo "Cil files created: "
+find $crestfileoutput -type f -name '*.cil.c' | wc -l
+
+
+
+
+## Run the java program
+
+echo "Running Java Comparision........"
+
+
+
+cd ../src
+
+# TODO:
+#javac dk/*.java; java dk/Supervisor $appName; rm -f dk/*.class
+
+
+cd ..
+

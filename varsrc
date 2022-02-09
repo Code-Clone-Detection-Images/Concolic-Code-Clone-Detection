@@ -1,0 +1,22 @@
+#!/bin/sh
+# Exit immediately if command nonzero
+set -eu
+
+HOME_FOLDER=/home/fedora-user # we are roooooot
+
+CREST_VERSION=0.1.1
+CREST_FILE="crest-$CREST_VERSION.tar.gz"
+CREST_FOLDER="$(basename $CREST_FILE .tar.gz)"
+
+CTAGS_VERSION=5.8
+CTAGS_BUILD=1.i386
+CTAGS_FILE="ctags-$CTAGS_VERSION-$CTAGS_BUILD.rpm"
+
+YICES_TARGET=/usr/local
+YICES_LIB=/usr/lib64
+
+CCCD_DIRTY="$HOME_FOLDER/dk-crest-java/trunk/ dk-crest-java --username dek782@gmail.com/crestClean"
+
+EXAMPLE="kraw"
+
+OCAML_VERSION=3.09.0
