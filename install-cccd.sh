@@ -66,8 +66,8 @@ sed -i 's/if enable then/if true then/' bashScripts/customfiles/cil.ml # :)
 # update callsites:
 sed -i 's/(new descriptiveCilPrinterClass true)/(new descriptiveCilPrinterClass)/' bashScripts/customfiles/cil.ml
 
-# Debug stuff:
-cat -n bashScripts/customfiles/cil.ml | head -n4820 | tail -n10
+# Old Debug stuff: (i keep this, because i needed it probably a hundred times)
+# cat -n bashScripts/customfiles/cil.ml | head -n4820 | tail -n10
 
 cp bashScripts/customfiles/cil.ml "$HOME_FOLDER/$CREST_FOLDER/cil/src/"
 fi # patch toggle as i still do not like the modifications
