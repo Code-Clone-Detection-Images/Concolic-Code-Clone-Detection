@@ -175,8 +175,8 @@ echo "Running Java Comparision........"
 
 cd ../src
 
-# TODO:
-#javac dk/*.java; java dk/Supervisor $appName; rm -f dk/*.class
+# we use && instead of ;, because we want safety!
+javac dk/*.java && java dk/Supervisor $appName ; rm -f dk/*.class
 
 
 cd ..

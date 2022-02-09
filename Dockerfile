@@ -13,6 +13,11 @@ COPY setup-fedora.sh varsrc /
 RUN chmod +x /setup-fedora.sh && /setup-fedora.sh
 RUN rm /setup-fedora.sh
 
+# we do need java for the aggregation
+COPY install-java.sh /
+RUN chmod +x /install-java.sh && /install-java.sh
+RUN rm /install-java.sh
+
 # I call this extra to allow caching to work on the ocaml setup and stuff.
 COPY setup-crest.sh $YICES /
 RUN chmod +x /setup-crest.sh && /setup-crest.sh
@@ -29,7 +34,7 @@ RUN rm /setup-cccd.sh
 # The goal is to have all downloads to be completed here (except for the yices installer shell script. This
 # May be a todo)
 # Furthermore, all the previeous steps consume >5min and i have to perform a lot of interface mods from now on...
-COPY install-cccd.sh /
+COPY install-cccd.sh varsrc-extra /
 RUN chmod +x /install-cccd.sh && /install-cccd.sh
 RUN rm /install-cccd.sh
 

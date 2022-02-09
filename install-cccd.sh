@@ -1,9 +1,12 @@
 source /varsrc
+source /varsrc-extra
 
 cd "$HOME_FOLDER"
 
 echo " - Installing CCCD base"
 
+if [ "$DO_CIL_PATCH" = "YES" ]
+then
 echo "   - Updating cil custom location [source base: '$CCCD_DIRTY'; target: '$HOME_FOLDER/$CREST_FOLDER/cil/src/']"
 
 cd "$CCCD_DIRTY"
@@ -67,6 +70,7 @@ sed -i 's/(new descriptiveCilPrinterClass true)/(new descriptiveCilPrinterClass)
 cat -n bashScripts/customfiles/cil.ml | head -n4820 | tail -n10
 
 cp bashScripts/customfiles/cil.ml "$HOME_FOLDER/$CREST_FOLDER/cil/src/"
+fi # patch toggle as i still do not like the modifications
 
 echo "    - installing cil"
 cd "$HOME_FOLDER/$CREST_FOLDER/cil"

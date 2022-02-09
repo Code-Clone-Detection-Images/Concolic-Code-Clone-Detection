@@ -1,0 +1,6 @@
+#!/bin/sh
+# Exit immediately if command nonzero
+set -eu
+
+EXAMPLE="kraw"
+DO_CIL_PATCH="NO" # use "YES" to run
