@@ -22,5 +22,17 @@ echo "   - removing variables"
 rm "/varsrc"
 rm "/varsrc-extra"
 
+echo "   - remove scripts"
+rm /install-cccd.sh
+rm /install-java.sh
+rm /setup-cccd.sh
+rm /setup-crest.sh
+rm /setup-ctags.sh
+rm /setup-fedora.sh
+rm /test-cccd.sh
+rm /patching.sh
+rm /cleanup.sh
+
+
 echo "   - clean up dnf"
 sudo dnf clean all
