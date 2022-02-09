@@ -19,7 +19,7 @@ RUN chmod +x /install-java.sh && /install-java.sh
 RUN rm /install-java.sh
 
 # I call this extra to allow caching to work on the ocaml setup and stuff.
-COPY setup-crest.sh $YICES /
+COPY setup-crest.sh offline/$YICES offline/install-yices.sh /
 RUN chmod +x /setup-crest.sh && /setup-crest.sh
 RUN rm /setup-crest.sh
 
@@ -27,7 +27,7 @@ COPY setup-ctags.sh /
 RUN chmod +x /setup-ctags.sh && /setup-ctags.sh
 RUN rm /setup-ctags.sh
 
-COPY setup-cccd.sh /
+COPY setup-cccd.sh offline/cccd.zip /
 RUN chmod +x /setup-cccd.sh && /setup-cccd.sh
 RUN rm /setup-cccd.sh
 

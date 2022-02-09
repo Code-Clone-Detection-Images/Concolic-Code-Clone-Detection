@@ -99,8 +99,7 @@ cd "$HOME_FOLDER/"
 cd "$HOME_FOLDER/"
 # auto yices installer TODO: check if necessary
 # Based on ocamlyices https://github.com/polazarus/ocamlyices
-wget -q -O- http://git.io/sWxMmg | sh -s "/$YICES" --prefix "$YICES_TARGET" --libdir=$YICES_LIB
-
+sh /install-yices.sh "/$YICES" --prefix "$YICES_TARGET" --libdir=$YICES_LIB
 
 cd "$HOME_FOLDER/$CREST_FOLDER/cil"
 
