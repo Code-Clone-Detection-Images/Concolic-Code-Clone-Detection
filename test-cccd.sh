@@ -3,15 +3,15 @@
 source /varsrc
 source /varsrc-extra
 
-echo " - Running first Test [$EXAMPLE]"
+echo " - Running first Test [$TEST_NAME]"
 
 cd "$CCCD_DIRTY/bashScripts"
 
-./cccd "$EXAMPLE"
+./cccd "$TEST_NAME"
 
-# cat "../sourceFiles/Reports/${EXAMPLE}_comparisionReport.csv" # jepp... a typo... great
+# cat "../sourceFiles/Reports/${TEST_NAME}_comparisionReport.csv" # jepp... a typo... great
 echo "validate test results..."
-python3 /validate-test.py /kraw-expected.csv "../sourceFiles/Reports/${EXAMPLE}_comparisionReport.csv"
+python3 /validate-test.py /kraw-expected.csv "../sourceFiles/Reports/${TEST_NAME}_comparisionReport.csv"
 
 # TODO: automatically grep which file to cat for the test-cccd.sh script by using output of cccd (java call)
 

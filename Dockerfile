@@ -1,3 +1,8 @@
+# This dockerfile builds everything and runs a test. The buildfiles are largely removed
+# However, this dockerfile is not designed to produce a "minimal" image. It was the result of a long process
+# of patching and cleaned up afterwards. Furthermore, there is no real need to clean it up further (at least for me)
+# the size, while large, is sufficient for running cccd.
+
 # instead of 14, we use 34. I am not aware of any :14 container (nothing below :32 for ocaml it seems)
 FROM ocaml/opam:fedora-34-opam
 # FROM ocaml/opam:fedora-34-ocaml-4.09
@@ -51,3 +56,5 @@ CMD ["/bin/bash"]
 
 LABEL description="This image is used to get cccd running even though basically none of its dependencies are easily available today."
 LABEL url_ccd="https://web.archive.org/web/20150921003732/https://www.se.rit.edu/~dkrutz/CCCD/index.html?page=install"
+
+# Here we could extract the build container. however, this did not work the first time and so i am scared and refer to a cleanup

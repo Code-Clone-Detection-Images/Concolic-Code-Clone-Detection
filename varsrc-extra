@@ -2,4 +2,4 @@
 # Exit immediately if command nonzero
 set -eu
 
-EXAMPLE="kraw"
+TEST_NAME="kraw"
