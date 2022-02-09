@@ -1,5 +1,0 @@
-#!/bin/sh
-# Exit immediately if command nonzero
-set -eu
-
-TEST_NAME="kraw"

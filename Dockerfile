@@ -35,7 +35,7 @@ ARG DO_CIL_PATCH="YES"
 # The goal is to have all downloads to be completed here (except for the yices installer shell script. This
 # May be a todo)
 # Furthermore, all the previeous steps consume >5min and i have to perform a lot of interface mods from now on...
-COPY scripts/install-cccd.sh data/varsrc-extra /
+COPY scripts/install-cccd.sh /
 RUN chmod +x /install-cccd.sh && /install-cccd.sh
 
 COPY scripts/patching.sh data/cccd.new /
@@ -43,6 +43,7 @@ RUN chmod +x /patching.sh && /patching.sh
 
 RUN echo "TODO: update source files"
 
+ARG TEST_NAME="kraw"
 # trying caching
 COPY scripts/test-cccd.sh testing/validate-test.py testing/kraw-expected.csv /
 RUN chmod +x /test-cccd.sh && /test-cccd.sh

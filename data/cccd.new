@@ -169,9 +169,7 @@ find $crestfileoutput -type f -name '*.cil.c' | wc -l
 
 ## Run the java program
 
-echo "Running Java Comparision........"
-
-
+echo "Running Java Comparison........" # fixed a typo :)
 
 cd ../src
 

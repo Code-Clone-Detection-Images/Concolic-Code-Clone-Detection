@@ -1,7 +1,5 @@
 #!/bin/sh
-
 source /varsrc
-source /varsrc-extra
 
 echo " - Running first Test [$TEST_NAME]"
 

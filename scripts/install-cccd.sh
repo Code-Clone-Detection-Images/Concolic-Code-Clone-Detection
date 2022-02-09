@@ -1,5 +1,4 @@
 source /varsrc
-source /varsrc-extra
 
 cd "$HOME_FOLDER"
 

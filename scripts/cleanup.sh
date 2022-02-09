@@ -1,7 +1,6 @@
 #!/bin/sh
 
 source /varsrc
-source /varsrc-extra
 
 echo " - Cleaning up"
 
@@ -20,7 +19,6 @@ rm "/validate-test.py"
 
 echo "   - removing variables"
 rm "/varsrc"
-rm "/varsrc-extra"
 
 echo "   - remove scripts"
 rm /install-cccd.sh
