@@ -4,22 +4,17 @@ FROM ocaml/opam:fedora-34-opam
 
 USER root
 
-# https://github.com/erimcg/ChewTPTP/tree/master/ChewTPTP
-ARG YICES=yices-1.0.13-x86_64-pc-linux-gnu.tar.gz
-ARG JAVA_TARGET=java-1.8.0-openjdk-devel.x86_64
-# we are roooooot
 ARG OCAML_VERSION=3.09.0 HOME_FOLDER=/home/fedora-user
-
-# ARG GMP=gmp-4.2.2.tar.gz
-
 COPY setup-fedora.sh varsrc /
-
 RUN chmod +x /setup-fedora.sh && /setup-fedora.sh
 
+ARG JAVA_TARGET=java-1.8.0-openjdk-devel.x86_64
 # we do need java for the aggregation
 COPY install-java.sh /
 RUN chmod +x /install-java.sh && /install-java.sh
 
+# https://github.com/erimcg/ChewTPTP/tree/master/ChewTPTP
+ARG YICES=yices-1.0.13-x86_64-pc-linux-gnu.tar.gz
 # I call this extra to allow caching to work on the ocaml setup and stuff.
 COPY setup-crest.sh offline/$YICES offline/install-yices.sh /
 RUN chmod +x /setup-crest.sh && /setup-crest.sh
@@ -32,7 +27,6 @@ RUN chmod +x /setup-cccd.sh && /setup-cccd.sh
 
 # use "YES" to run (anything else will be false); without will not produce any ratings, but at least it breaks free from dirty patching
 ARG DO_CIL_PATCH="YES"
-
 # The goal is to have all downloads to be completed here (except for the yices installer shell script. This
 # May be a todo)
 # Furthermore, all the previeous steps consume >5min and i have to perform a lot of interface mods from now on...
@@ -44,8 +38,6 @@ RUN chmod +x /patching.sh && /patching.sh
 
 RUN echo "TODO: update source files"
 
-WORKDIR /home/fedora-user
-
 # trying caching
 COPY test-cccd.sh validate-test.py kraw-expected.csv /
 RUN chmod +x /test-cccd.sh && /test-cccd.sh
@@ -53,6 +45,7 @@ RUN chmod +x /test-cccd.sh && /test-cccd.sh
 COPY cleanup.sh /
 RUN chmod +x /cleanup.sh && /cleanup.sh
 
+WORKDIR /home/fedora-user
 # USER fedora-user # keep root for inspection
 CMD ["/bin/bash"]
 
