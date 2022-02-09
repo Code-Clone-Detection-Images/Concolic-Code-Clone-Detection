@@ -52,5 +52,9 @@ COPY test-cccd.sh validate-test.py kraw-expected.csv /
 RUN chmod +x /test-cccd.sh && /test-cccd.sh
 RUN rm /test-cccd.sh
 
+COPY cleanup.sh /
+RUN chmod +x /cleanup.sh && /cleanup.sh
+RUN rm /cleanup.sh
+
 # USER fedora-user # keep root for inspection
 CMD ["/bin/bash"]
