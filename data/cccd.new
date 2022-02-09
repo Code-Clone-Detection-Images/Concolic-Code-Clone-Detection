@@ -176,6 +176,7 @@ echo "Running Java Comparision........"
 cd ../src
 
 # we use && instead of ;, because we want safety!
-javac dk/*.java && java dk/Supervisor $appName ; rm -f dk/*.class
-
+# TMPFILE=$(mktemp /tmp/XXXXXX.log)
+# trap "rm -f \"$TMPFILE\"" EXIT
+javac dk/*.java && java dk/Supervisor $appName > "cccd-run.log" ; rm -f dk/*.class
 cd ..
