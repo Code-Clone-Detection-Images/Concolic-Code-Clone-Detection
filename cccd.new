@@ -178,6 +178,4 @@ cd ../src
 # we use && instead of ;, because we want safety!
 javac dk/*.java && java dk/Supervisor $appName ; rm -f dk/*.class
 
-
 cd ..
-

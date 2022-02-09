@@ -41,16 +41,16 @@ RUN rm /install-cccd.sh
 COPY patching.sh cccd.new /
 RUN chmod +x /patching.sh && /patching.sh
 RUN rm /patching.sh
+# TODO: move all rms to a cleanup script
 
 RUN echo "TODO: update source files"
 
+WORKDIR /home/fedora-user
+
 # trying caching
-COPY test-cccd.sh /
+COPY test-cccd.sh validate-test.py kraw-expected.csv /
 RUN chmod +x /test-cccd.sh && /test-cccd.sh
 RUN rm /test-cccd.sh
 
 # USER fedora-user # keep root for inspection
-
-WORKDIR /home/fedora-user
-
 CMD ["/bin/bash"]
