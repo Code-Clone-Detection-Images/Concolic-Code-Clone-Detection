@@ -7,7 +7,9 @@
 FROM ocaml/opam:fedora-34-opam
 # FROM ocaml/opam:fedora-34-ocaml-4.09
 
+# root for analysis
 USER root
+WORKDIR /home/fedora-user
 
 ARG OCAML_VERSION=3.09.0 HOME_FOLDER=/home/fedora-user
 COPY scripts/setup-fedora.sh data/varsrc /
@@ -45,17 +47,16 @@ RUN echo "TODO: update source files"
 
 ARG TEST_NAME="kraw"
 # trying caching
-COPY scripts/test-cccd.sh testing/validate-test.py testing/kraw-expected.csv /
-RUN chmod +x /test-cccd.sh && /test-cccd.sh
+COPY scripts/run-cccd.sh scripts/test-cccd.sh testing/validate-test.py testing/kraw-expected.csv /
+RUN chmod +x /run-cccd.sh && chmod +x /test-cccd.sh && /test-cccd.sh
 
+# cleanup will remove all scripts but the run script
 COPY scripts/cleanup.sh /
 RUN chmod +x /cleanup.sh && /cleanup.sh
 
-WORKDIR /home/fedora-user
 # USER fedora-user # keep root for inspection
 CMD ["/bin/bash"]
 
-LABEL description="This image is used to get cccd running even though basically none of its dependencies are easily available today."
-LABEL url_ccd="https://web.archive.org/web/20150921003732/https://www.se.rit.edu/~dkrutz/CCCD/index.html?page=install"
+LABEL description="This image is used to get cccd running even though basically none of its dependencies are easily available today." url_ccd="https://web.archive.org/web/20150921003732/https://www.se.rit.edu/~dkrutz/CCCD/index.html?page=install"
 
 # Here we could extract the build container. however, this did not work the first time and so i am scared and refer to a cleanup
