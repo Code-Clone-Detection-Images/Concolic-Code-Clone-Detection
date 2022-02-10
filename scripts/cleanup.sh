@@ -17,8 +17,9 @@ echo "   - removing test data"
 rm "/kraw-expected.csv"
 rm "/validate-test.py"
 
-echo "   - removing variables"
-rm "/varsrc"
+# We do not, as run needs them
+# echo "   - removing variables"
+# rm "/varsrc"
 
 echo "   - remove scripts"
 rm /install-cccd.sh

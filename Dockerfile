@@ -11,13 +11,11 @@ FROM ocaml/opam:fedora-34-opam
 USER root
 WORKDIR /home/fedora-user
 
-ARG OCAML_VERSION=3.09.0 HOME_FOLDER=/home/fedora-user
+ENV OCAML_VERSION=3.09.0 HOME_FOLDER=/home/fedora-user
 COPY scripts/setup-fedora.sh data/varsrc /
 RUN chmod +x /setup-fedora.sh && /setup-fedora.sh
 
-ARG CCCD_DIRTY="$HOME_FOLDER/dk-crest-java/trunk/ dk-crest-java --username dek782@gmail.com/crestClean"
-
-ARG JAVA_TARGET=java-1.8.0-openjdk-devel.x86_64
+ENV CCCD_DIRTY="$HOME_FOLDER/dk-crest-java/trunk/ dk-crest-java --username dek782@gmail.com/crestClean" JAVA_TARGET=java-1.8.0-openjdk-devel.x86_64
 # we do need java for the aggregation
 COPY scripts/install-java.sh /
 RUN chmod +x /install-java.sh && /install-java.sh
