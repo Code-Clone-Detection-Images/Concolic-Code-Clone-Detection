@@ -12,5 +12,3 @@ CTAGS_FILE="ctags-$CTAGS_VERSION-$CTAGS_BUILD.rpm"
 
 YICES_TARGET=/usr/local
 YICES_LIB=/usr/lib64
-
-CCCD_DIRTY="$HOME_FOLDER/dk-crest-java/trunk/ dk-crest-java --username dek782@gmail.com/crestClean"
