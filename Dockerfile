@@ -56,8 +56,8 @@ RUN chmod +x /cleanup.sh && /cleanup.sh
 
 # created alongside the setup-fedora
 WORKDIR /home/fedora-user
-# root be gone! :C need it for copy
-# USER fedora-user
+# root be gone!
+USER fedora-user
 
 # USER fedora-user # keep root for inspection
 ENTRYPOINT [ "/bin/bash", "/run-cccd.sh" ]
