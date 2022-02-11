@@ -12,13 +12,12 @@ cp --update --recursive "$1" "$CCCD_INPUT" || true
 OUTPUT_BASENAME=$(basename "$1")
 ./cccd "$OUTPUT_BASENAME"
 
-echo ../src/cccd-run.log
-
 OUTPUT_FILENAME=$(tail --lines=1 ../src/cccd-run.log)
 OUTPUT_FILENAME="$(pwd)/${OUTPUT_FILENAME/See Report at: /}"
 echo "[Done] Analyze \"$OUTPUT_FILENAME\""
 # extract file name (NOTE: input should be folder)
 cp --update "$OUTPUT_FILENAME" "$1" || true
+chmod 777 "$1"
 
 # this is the return value of the script:
 echo "$OUTPUT_FILENAME"

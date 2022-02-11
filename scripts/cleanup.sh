@@ -35,3 +35,10 @@ rm /cleanup.sh
 
 echo "   - clean up dnf"
 sudo dnf clean all
+
+# https://opam.ocaml.org/doc/man/opam-clean.html
+echo "   - clean up opam"
+opam clean --yes --logs --download-cache --switch-cleanup --repo-cache --unused-repositories
+
+echo "   - set \"\"\"permissions \"\"\" for fedora-user"
+chmod -R 777 "$HOME_FOLDER"

@@ -3,7 +3,6 @@
 source /varsrc
 
 # Issuing https://web.archive.org/web/20200209173743/http://www.se.rit.edu/~dkrutz/CCCD/index.html?page=install
-
 echo " - New User"
 groupadd fedora-group && adduser fedora-user -m -g fedora-group
 

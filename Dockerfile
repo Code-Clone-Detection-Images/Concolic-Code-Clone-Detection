@@ -7,9 +7,8 @@
 FROM ocaml/opam:fedora-34-opam
 # FROM ocaml/opam:fedora-34-ocaml-4.09
 
-# root for analysis
+# installation
 USER root
-WORKDIR /home/fedora-user
 
 ENV OCAML_VERSION=3.09.0 HOME_FOLDER=/home/fedora-user
 COPY scripts/setup-fedora.sh data/varsrc /
@@ -54,6 +53,11 @@ RUN chmod +x /run-cccd.sh && chmod +x /test-cccd.sh && /test-cccd.sh
 # cleanup will remove all scripts but the run script
 COPY scripts/cleanup.sh /
 RUN chmod +x /cleanup.sh && /cleanup.sh
+
+# created alongside the setup-fedora
+WORKDIR /home/fedora-user
+# root be gone! :C need it for copy
+# USER fedora-user
 
 # USER fedora-user # keep root for inspection
 ENTRYPOINT [ "/bin/bash", "/run-cccd.sh" ]
