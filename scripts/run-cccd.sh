@@ -19,5 +19,8 @@ echo "[Done] Analyze \"$OUTPUT_FILENAME\""
 cp --update "$OUTPUT_FILENAME" "$1" || true
 chmod 777 "$1"
 
+# produce clone information:
+python3 /list-clones.py "$OUTPUT_FILENAME"
+
 # this is the return value of the script:
 echo "$OUTPUT_FILENAME"

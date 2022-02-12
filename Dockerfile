@@ -45,7 +45,7 @@ RUN chmod +x /patching.sh && /patching.sh
 ENV CCCD_INPUT="$CCCD_DIRTY/sourceFiles/input"
 ARG TEST_NAME="$CCCD_INPUT/kraw"
 # trying caching
-COPY scripts/run-cccd.sh scripts/test-cccd.sh testing/validate-test.py testing/kraw-expected.csv /
+COPY scripts/run-cccd.sh scripts/test-cccd.sh analysis/validate-test.py analysis/parse_dist_mapping.py analysis/list-clones.py testing/kraw-expected.csv /
 RUN chmod +x /run-cccd.sh && chmod +x /test-cccd.sh && /test-cccd.sh
 
 # cleanup will remove all scripts but the run script

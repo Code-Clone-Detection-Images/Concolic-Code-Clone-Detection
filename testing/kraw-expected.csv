@@ -1,223 +1,223 @@
 Files,LevenDist
-kraw.c :sumprod3b()-kraw.c :sumprod4b(),2
-kraw.c :sumprod1c()-kraw.c :sumprod4b(),1
-kraw.c :sumprod1c()-kraw.c :sumprod3b(),2
-kraw.c :type2a_krawitz()-kraw.c :sumprod4b(),39
-kraw.c :type2a_krawitz()-kraw.c :sumprod3b(),39
-kraw.c :type2a_krawitz()-kraw.c :sumprod1c(),39
-kraw.c :sumprodo()-kraw.c :sumprod4b(),1
-kraw.c :sumprodo()-kraw.c :sumprod3b(),2
-kraw.c :sumprodo()-kraw.c :sumprod1c(),1
-kraw.c :sumprodo()-kraw.c :type2a_krawitz(),39
-kraw.c :sumprod2c()-kraw.c :sumprod4b(),15
-kraw.c :sumprod2c()-kraw.c :sumprod3b(),15
-kraw.c :sumprod2c()-kraw.c :sumprod1c(),14
-kraw.c :sumprod2c()-kraw.c :sumprodo(),15
-kraw.c :sumprod3c()-kraw.c :sumprod4b(),10
-kraw.c :sumprod3c()-kraw.c :sumprod3b(),11
-kraw.c :sumprod3c()-kraw.c :sumprod1c(),9
-kraw.c :sumprod3c()-kraw.c :type2a_krawitz(),35
-kraw.c :sumprod3c()-kraw.c :sumprodo(),10
-kraw.c :sumprod3c()-kraw.c :sumprod2c(),21
-kraw.c :sumprod2a()-kraw.c :sumprod4b(),3
-kraw.c :sumprod2a()-kraw.c :sumprod3b(),3
-kraw.c :sumprod2a()-kraw.c :sumprod1c(),2
-kraw.c :sumprod2a()-kraw.c :type2a_krawitz(),39
-kraw.c :sumprod2a()-kraw.c :sumprodo(),2
-kraw.c :sumprod2a()-kraw.c :sumprod2c(),15
-kraw.c :sumprod2a()-kraw.c :sumprod3c(),11
-kraw.c :sumprod3a()-kraw.c :sumprod4b(),5
-kraw.c :sumprod3a()-kraw.c :sumprod3b(),6
-kraw.c :sumprod3a()-kraw.c :sumprod1c(),5
-kraw.c :sumprod3a()-kraw.c :type2a_krawitz(),38
-kraw.c :sumprod3a()-kraw.c :sumprodo(),5
-kraw.c :sumprod3a()-kraw.c :sumprod2c(),15
-kraw.c :sumprod3a()-kraw.c :sumprod3c(),10
-kraw.c :sumprod3a()-kraw.c :sumprod2a(),6
-kraw.c :foo2()-kraw.c :foo3(),12
-kraw.c :sumprod2d()-kraw.c :sumprod4b(),3
-kraw.c :sumprod2d()-kraw.c :sumprod3b(),5
-kraw.c :sumprod2d()-kraw.c :sumprod1c(),3
-kraw.c :sumprod2d()-kraw.c :type2a_krawitz(),38
-kraw.c :sumprod2d()-kraw.c :sumprodo(),3
-kraw.c :sumprod2d()-kraw.c :sumprod2c(),15
-kraw.c :sumprod2d()-kraw.c :sumprod3c(),10
-kraw.c :sumprod2d()-kraw.c :sumprod2a(),4
-kraw.c :sumprod2d()-kraw.c :sumprod3a(),7
-kraw.c :sumprod4a()-kraw.c :sumprod4b(),1
-kraw.c :sumprod4a()-kraw.c :sumprod3b(),3
-kraw.c :sumprod4a()-kraw.c :sumprod1c(),1
-kraw.c :sumprod4a()-kraw.c :type2a_krawitz(),39
-kraw.c :sumprod4a()-kraw.c :sumprodo(),1
-kraw.c :sumprod4a()-kraw.c :sumprod2c(),15
-kraw.c :sumprod4a()-kraw.c :sumprod3c(),10
-kraw.c :sumprod4a()-kraw.c :sumprod2a(),2
-kraw.c :sumprod4a()-kraw.c :sumprod3a(),5
-kraw.c :sumprod4a()-kraw.c :sumprod2d(),3
-kraw.c :type1a_krawitz()-kraw.c :sumprod3b(),39
-kraw.c :type1a_krawitz()-kraw.c :sumprod1c(),39
-kraw.c :type1a_krawitz()-kraw.c :type2a_krawitz(),10
-kraw.c :type1a_krawitz()-kraw.c :sumprodo(),39
-kraw.c :type1a_krawitz()-kraw.c :sumprod2c(),34
-kraw.c :type1a_krawitz()-kraw.c :sumprod3c(),36
-kraw.c :type1a_krawitz()-kraw.c :sumprod3a(),38
-kraw.c :type1a_krawitz()-kraw.c :sumprod2d(),39
-kraw.c :type1a_krawitz()-kraw.c :sumprod4a(),39
-kraw.c :type4b2_krawitz()-kraw.c :type4b_krawitz(),23
-kraw.c :sumprod2b()-kraw.c :sumprod4b(),2
-kraw.c :sumprod2b()-kraw.c :sumprod3b(),2
-kraw.c :sumprod2b()-kraw.c :sumprod1c(),3
-kraw.c :sumprod2b()-kraw.c :type2a_krawitz(),39
-kraw.c :sumprod2b()-kraw.c :sumprodo(),3
-kraw.c :sumprod2b()-kraw.c :sumprod2c(),15
-kraw.c :sumprod2b()-kraw.c :sumprod3c(),11
-kraw.c :sumprod2b()-kraw.c :sumprod2a(),0
-kraw.c :sumprod2b()-kraw.c :sumprod3a(),7
-kraw.c :sumprod2b()-kraw.c :sumprod2d(),4
-kraw.c :sumprod2b()-kraw.c :sumprod4a(),3
-kraw.c :sumprod2b()-kraw.c :type1a_krawitz(),39
-kraw.c :sumprod4d()-kraw.c :sumprod4b(),22
-kraw.c :sumprod4d()-kraw.c :sumprod3b(),22
-kraw.c :sumprod4d()-kraw.c :sumprod1c(),22
-kraw.c :sumprod4d()-kraw.c :sumprodo(),22
-kraw.c :sumprod4d()-kraw.c :sumprod2c(),32
-kraw.c :sumprod4d()-kraw.c :sumprod3c(),25
-kraw.c :sumprod4d()-kraw.c :sumprod2a(),23
-kraw.c :sumprod4d()-kraw.c :sumprod3a(),24
-kraw.c :sumprod4d()-kraw.c :sumprod2d(),24
-kraw.c :sumprod4d()-kraw.c :sumprod4a(),22
-kraw.c :sumprod4d()-kraw.c :sumprod2b(),23
-kraw.c :type3a_krawitz()-kraw.c :sumprod4b(),39
-kraw.c :type3a_krawitz()-kraw.c :sumprod3b(),39
-kraw.c :type3a_krawitz()-kraw.c :sumprod1c(),39
-kraw.c :type3a_krawitz()-kraw.c :type2a_krawitz(),0
-kraw.c :type3a_krawitz()-kraw.c :sumprodo(),39
-kraw.c :type3a_krawitz()-kraw.c :sumprod3c(),35
-kraw.c :type3a_krawitz()-kraw.c :sumprod2a(),39
-kraw.c :type3a_krawitz()-kraw.c :sumprod3a(),38
-kraw.c :type3a_krawitz()-kraw.c :sumprod2d(),38
-kraw.c :type3a_krawitz()-kraw.c :sumprod4a(),39
-kraw.c :type3a_krawitz()-kraw.c :type1a_krawitz(),10
-kraw.c :type3a_krawitz()-kraw.c :sumprod2b(),39
-kraw.c :foo()-kraw.c :foo3(),17
-kraw.c :foo()-kraw.c :foo2(),16
-kraw.c :sumprod3e()-kraw.c :sumprod4b(),10
-kraw.c :sumprod3e()-kraw.c :sumprod3b(),11
-kraw.c :sumprod3e()-kraw.c :sumprod1c(),10
-kraw.c :sumprod3e()-kraw.c :type2a_krawitz(),38
-kraw.c :sumprod3e()-kraw.c :sumprodo(),10
-kraw.c :sumprod3e()-kraw.c :sumprod2c(),19
-kraw.c :sumprod3e()-kraw.c :sumprod3c(),15
-kraw.c :sumprod3e()-kraw.c :sumprod2a(),11
-kraw.c :sumprod3e()-kraw.c :sumprod3a(),13
-kraw.c :sumprod3e()-kraw.c :sumprod2d(),11
-kraw.c :sumprod3e()-kraw.c :sumprod4a(),10
-kraw.c :sumprod3e()-kraw.c :type1a_krawitz(),37
-kraw.c :sumprod3e()-kraw.c :sumprod2b(),11
-kraw.c :sumprod3e()-kraw.c :sumprod4d(),30
-kraw.c :sumprod3e()-kraw.c :type3a_krawitz(),38
-kraw.c :type1b_krawitz()-kraw.c :sumprod3b(),39
-kraw.c :type1b_krawitz()-kraw.c :sumprod1c(),39
-kraw.c :type1b_krawitz()-kraw.c :type2a_krawitz(),10
-kraw.c :type1b_krawitz()-kraw.c :sumprodo(),39
-kraw.c :type1b_krawitz()-kraw.c :sumprod2c(),34
-kraw.c :type1b_krawitz()-kraw.c :sumprod3c(),36
-kraw.c :type1b_krawitz()-kraw.c :sumprod3a(),38
-kraw.c :type1b_krawitz()-kraw.c :sumprod2d(),39
-kraw.c :type1b_krawitz()-kraw.c :sumprod4a(),39
-kraw.c :type1b_krawitz()-kraw.c :type1a_krawitz(),0
-kraw.c :type1b_krawitz()-kraw.c :sumprod2b(),39
-kraw.c :type1b_krawitz()-kraw.c :type3a_krawitz(),10
-kraw.c :type1b_krawitz()-kraw.c :sumprod3e(),37
-kraw.c :sumprod3d()-kraw.c :sumprod4b(),6
-kraw.c :sumprod3d()-kraw.c :sumprod3b(),6
-kraw.c :sumprod3d()-kraw.c :sumprod1c(),6
-kraw.c :sumprod3d()-kraw.c :sumprodo(),6
-kraw.c :sumprod3d()-kraw.c :sumprod2c(),15
-kraw.c :sumprod3d()-kraw.c :sumprod3c(),14
-kraw.c :sumprod3d()-kraw.c :sumprod2a(),8
-kraw.c :sumprod3d()-kraw.c :sumprod3a(),10
-kraw.c :sumprod3d()-kraw.c :sumprod2d(),8
-kraw.c :sumprod3d()-kraw.c :sumprod4a(),7
-kraw.c :sumprod3d()-kraw.c :sumprod2b(),8
-kraw.c :sumprod3d()-kraw.c :sumprod4d(),22
-kraw.c :sumprod3d()-kraw.c :sumprod3e(),14
-kraw.c :sumprod4c()-kraw.c :sumprod4b(),10
-kraw.c :sumprod4c()-kraw.c :sumprod3b(),9
-kraw.c :sumprod4c()-kraw.c :sumprod1c(),10
-kraw.c :sumprod4c()-kraw.c :type2a_krawitz(),38
-kraw.c :sumprod4c()-kraw.c :sumprodo(),10
-kraw.c :sumprod4c()-kraw.c :sumprod2c(),15
-kraw.c :sumprod4c()-kraw.c :sumprod3c(),13
-kraw.c :sumprod4c()-kraw.c :sumprod2a(),10
-kraw.c :sumprod4c()-kraw.c :sumprod3a(),10
-kraw.c :sumprod4c()-kraw.c :sumprod2d(),11
-kraw.c :sumprod4c()-kraw.c :sumprod4a(),10
-kraw.c :sumprod4c()-kraw.c :type1a_krawitz(),39
-kraw.c :sumprod4c()-kraw.c :sumprod2b(),10
-kraw.c :sumprod4c()-kraw.c :sumprod4d(),24
-kraw.c :sumprod4c()-kraw.c :type3a_krawitz(),38
-kraw.c :sumprod4c()-kraw.c :sumprod3e(),15
-kraw.c :sumprod4c()-kraw.c :type1b_krawitz(),39
-kraw.c :sumprod4c()-kraw.c :sumprod3d(),6
-kraw.c :type3b_krawitz()-kraw.c :type2a_krawitz(),31
-kraw.c :type3b_krawitz()-kraw.c :type1a_krawitz(),27
-kraw.c :type3b_krawitz()-kraw.c :type3a_krawitz(),30
-kraw.c :type3b_krawitz()-kraw.c :type1b_krawitz(),26
-kraw.c :sumprod1a()-kraw.c :sumprod4b(),1
-kraw.c :sumprod1a()-kraw.c :sumprod3b(),2
-kraw.c :sumprod1a()-kraw.c :sumprod1c(),0
-kraw.c :sumprod1a()-kraw.c :type2a_krawitz(),39
-kraw.c :sumprod1a()-kraw.c :sumprodo(),1
-kraw.c :sumprod1a()-kraw.c :sumprod2c(),15
-kraw.c :sumprod1a()-kraw.c :sumprod3c(),10
-kraw.c :sumprod1a()-kraw.c :sumprod2a(),2
-kraw.c :sumprod1a()-kraw.c :sumprod3a(),4
-kraw.c :sumprod1a()-kraw.c :sumprod2d(),3
-kraw.c :sumprod1a()-kraw.c :sumprod4a(),0
-kraw.c :sumprod1a()-kraw.c :type1a_krawitz(),39
-kraw.c :sumprod1a()-kraw.c :sumprod2b(),3
-kraw.c :sumprod1a()-kraw.c :sumprod4d(),22
-kraw.c :sumprod1a()-kraw.c :type3a_krawitz(),39
-kraw.c :sumprod1a()-kraw.c :sumprod3e(),10
-kraw.c :sumprod1a()-kraw.c :type1b_krawitz(),39
-kraw.c :sumprod1a()-kraw.c :sumprod3d(),6
-kraw.c :sumprod1a()-kraw.c :sumprod4c(),10
-kraw.c :sumprod1b()-kraw.c :sumprod4b(),0
-kraw.c :sumprod1b()-kraw.c :sumprod3b(),2
-kraw.c :sumprod1b()-kraw.c :sumprod1c(),0
-kraw.c :sumprod1b()-kraw.c :type2a_krawitz(),39
-kraw.c :sumprod1b()-kraw.c :sumprodo(),1
-kraw.c :sumprod1b()-kraw.c :sumprod2c(),15
-kraw.c :sumprod1b()-kraw.c :sumprod3c(),10
-kraw.c :sumprod1b()-kraw.c :sumprod2a(),2
-kraw.c :sumprod1b()-kraw.c :sumprod3a(),5
-kraw.c :sumprod1b()-kraw.c :sumprod2d(),3
-kraw.c :sumprod1b()-kraw.c :sumprod4a(),1
-kraw.c :sumprod1b()-kraw.c :type1a_krawitz(),39
-kraw.c :sumprod1b()-kraw.c :sumprod2b(),2
-kraw.c :sumprod1b()-kraw.c :sumprod4d(),22
-kraw.c :sumprod1b()-kraw.c :type3a_krawitz(),39
-kraw.c :sumprod1b()-kraw.c :sumprod3e(),10
-kraw.c :sumprod1b()-kraw.c :type1b_krawitz(),39
-kraw.c :sumprod1b()-kraw.c :sumprod3d(),6
-kraw.c :sumprod1b()-kraw.c :sumprod4c(),10
-kraw.c :sumprod1b()-kraw.c :sumprod1a(),0
-kraw.c :type2b_krawitz()-kraw.c :sumprod3b(),39
-kraw.c :type2b_krawitz()-kraw.c :sumprod1c(),39
-kraw.c :type2b_krawitz()-kraw.c :type2a_krawitz(),11
-kraw.c :type2b_krawitz()-kraw.c :sumprodo(),39
-kraw.c :type2b_krawitz()-kraw.c :sumprod2c(),34
-kraw.c :type2b_krawitz()-kraw.c :sumprod3c(),36
-kraw.c :type2b_krawitz()-kraw.c :sumprod3a(),38
-kraw.c :type2b_krawitz()-kraw.c :sumprod2d(),39
-kraw.c :type2b_krawitz()-kraw.c :sumprod4a(),39
-kraw.c :type2b_krawitz()-kraw.c :type1a_krawitz(),1
-kraw.c :type2b_krawitz()-kraw.c :sumprod2b(),39
-kraw.c :type2b_krawitz()-kraw.c :type3a_krawitz(),11
-kraw.c :type2b_krawitz()-kraw.c :sumprod3e(),37
-kraw.c :type2b_krawitz()-kraw.c :type1b_krawitz(),1
-kraw.c :type2b_krawitz()-kraw.c :sumprod4c(),39
-kraw.c :type2b_krawitz()-kraw.c :type3b_krawitz(),26
-kraw.c :type2b_krawitz()-kraw.c :sumprod1a(),39
-kraw.c :type2b_krawitz()-kraw.c :sumprod1b(),39
+kraw_try1.sumprod3b()-kraw_try1.sumprod4b(),2
+kraw_try1.sumprod1c()-kraw_try1.sumprod4b(),1
+kraw_try1.sumprod1c()-kraw_try1.sumprod3b(),2
+kraw_try1.type2a_krawitz()-kraw_try1.sumprod4b(),39
+kraw_try1.type2a_krawitz()-kraw_try1.sumprod3b(),39
+kraw_try1.type2a_krawitz()-kraw_try1.sumprod1c(),39
+kraw_try1.sumprodo()-kraw_try1.sumprod4b(),1
+kraw_try1.sumprodo()-kraw_try1.sumprod3b(),2
+kraw_try1.sumprodo()-kraw_try1.sumprod1c(),1
+kraw_try1.sumprodo()-kraw_try1.type2a_krawitz(),39
+kraw_try1.sumprod2c()-kraw_try1.sumprod4b(),15
+kraw_try1.sumprod2c()-kraw_try1.sumprod3b(),15
+kraw_try1.sumprod2c()-kraw_try1.sumprod1c(),14
+kraw_try1.sumprod2c()-kraw_try1.sumprodo(),15
+kraw_try1.sumprod3c()-kraw_try1.sumprod4b(),10
+kraw_try1.sumprod3c()-kraw_try1.sumprod3b(),11
+kraw_try1.sumprod3c()-kraw_try1.sumprod1c(),9
+kraw_try1.sumprod3c()-kraw_try1.type2a_krawitz(),35
+kraw_try1.sumprod3c()-kraw_try1.sumprodo(),10
+kraw_try1.sumprod3c()-kraw_try1.sumprod2c(),21
+kraw_try1.sumprod2a()-kraw_try1.sumprod4b(),3
+kraw_try1.sumprod2a()-kraw_try1.sumprod3b(),3
+kraw_try1.sumprod2a()-kraw_try1.sumprod1c(),2
+kraw_try1.sumprod2a()-kraw_try1.type2a_krawitz(),39
+kraw_try1.sumprod2a()-kraw_try1.sumprodo(),2
+kraw_try1.sumprod2a()-kraw_try1.sumprod2c(),15
+kraw_try1.sumprod2a()-kraw_try1.sumprod3c(),11
+kraw_try1.sumprod3a()-kraw_try1.sumprod4b(),5
+kraw_try1.sumprod3a()-kraw_try1.sumprod3b(),6
+kraw_try1.sumprod3a()-kraw_try1.sumprod1c(),5
+kraw_try1.sumprod3a()-kraw_try1.type2a_krawitz(),38
+kraw_try1.sumprod3a()-kraw_try1.sumprodo(),5
+kraw_try1.sumprod3a()-kraw_try1.sumprod2c(),15
+kraw_try1.sumprod3a()-kraw_try1.sumprod3c(),10
+kraw_try1.sumprod3a()-kraw_try1.sumprod2a(),6
+kraw_try1.foo2()-kraw_try1.foo3(),12
+kraw_try1.sumprod2d()-kraw_try1.sumprod4b(),3
+kraw_try1.sumprod2d()-kraw_try1.sumprod3b(),5
+kraw_try1.sumprod2d()-kraw_try1.sumprod1c(),3
+kraw_try1.sumprod2d()-kraw_try1.type2a_krawitz(),38
+kraw_try1.sumprod2d()-kraw_try1.sumprodo(),3
+kraw_try1.sumprod2d()-kraw_try1.sumprod2c(),15
+kraw_try1.sumprod2d()-kraw_try1.sumprod3c(),10
+kraw_try1.sumprod2d()-kraw_try1.sumprod2a(),4
+kraw_try1.sumprod2d()-kraw_try1.sumprod3a(),7
+kraw_try1.sumprod4a()-kraw_try1.sumprod4b(),1
+kraw_try1.sumprod4a()-kraw_try1.sumprod3b(),3
+kraw_try1.sumprod4a()-kraw_try1.sumprod1c(),1
+kraw_try1.sumprod4a()-kraw_try1.type2a_krawitz(),39
+kraw_try1.sumprod4a()-kraw_try1.sumprodo(),1
+kraw_try1.sumprod4a()-kraw_try1.sumprod2c(),15
+kraw_try1.sumprod4a()-kraw_try1.sumprod3c(),10
+kraw_try1.sumprod4a()-kraw_try1.sumprod2a(),2
+kraw_try1.sumprod4a()-kraw_try1.sumprod3a(),5
+kraw_try1.sumprod4a()-kraw_try1.sumprod2d(),3
+kraw_try1.type1a_krawitz()-kraw_try1.sumprod3b(),39
+kraw_try1.type1a_krawitz()-kraw_try1.sumprod1c(),39
+kraw_try1.type1a_krawitz()-kraw_try1.type2a_krawitz(),10
+kraw_try1.type1a_krawitz()-kraw_try1.sumprodo(),39
+kraw_try1.type1a_krawitz()-kraw_try1.sumprod2c(),34
+kraw_try1.type1a_krawitz()-kraw_try1.sumprod3c(),36
+kraw_try1.type1a_krawitz()-kraw_try1.sumprod3a(),38
+kraw_try1.type1a_krawitz()-kraw_try1.sumprod2d(),39
+kraw_try1.type1a_krawitz()-kraw_try1.sumprod4a(),39
+kraw_try1.type4b2_krawitz()-kraw_try1.type4b_krawitz(),23
+kraw_try1.sumprod2b()-kraw_try1.sumprod4b(),2
+kraw_try1.sumprod2b()-kraw_try1.sumprod3b(),2
+kraw_try1.sumprod2b()-kraw_try1.sumprod1c(),3
+kraw_try1.sumprod2b()-kraw_try1.type2a_krawitz(),39
+kraw_try1.sumprod2b()-kraw_try1.sumprodo(),3
+kraw_try1.sumprod2b()-kraw_try1.sumprod2c(),15
+kraw_try1.sumprod2b()-kraw_try1.sumprod3c(),11
+kraw_try1.sumprod2b()-kraw_try1.sumprod2a(),0
+kraw_try1.sumprod2b()-kraw_try1.sumprod3a(),7
+kraw_try1.sumprod2b()-kraw_try1.sumprod2d(),4
+kraw_try1.sumprod2b()-kraw_try1.sumprod4a(),3
+kraw_try1.sumprod2b()-kraw_try1.type1a_krawitz(),39
+kraw_try1.sumprod4d()-kraw_try1.sumprod4b(),22
+kraw_try1.sumprod4d()-kraw_try1.sumprod3b(),22
+kraw_try1.sumprod4d()-kraw_try1.sumprod1c(),22
+kraw_try1.sumprod4d()-kraw_try1.sumprodo(),22
+kraw_try1.sumprod4d()-kraw_try1.sumprod2c(),32
+kraw_try1.sumprod4d()-kraw_try1.sumprod3c(),25
+kraw_try1.sumprod4d()-kraw_try1.sumprod2a(),23
+kraw_try1.sumprod4d()-kraw_try1.sumprod3a(),24
+kraw_try1.sumprod4d()-kraw_try1.sumprod2d(),24
+kraw_try1.sumprod4d()-kraw_try1.sumprod4a(),22
+kraw_try1.sumprod4d()-kraw_try1.sumprod2b(),23
+kraw_try1.type3a_krawitz()-kraw_try1.sumprod4b(),39
+kraw_try1.type3a_krawitz()-kraw_try1.sumprod3b(),39
+kraw_try1.type3a_krawitz()-kraw_try1.sumprod1c(),39
+kraw_try1.type3a_krawitz()-kraw_try1.type2a_krawitz(),0
+kraw_try1.type3a_krawitz()-kraw_try1.sumprodo(),39
+kraw_try1.type3a_krawitz()-kraw_try1.sumprod3c(),35
+kraw_try1.type3a_krawitz()-kraw_try1.sumprod2a(),39
+kraw_try1.type3a_krawitz()-kraw_try1.sumprod3a(),38
+kraw_try1.type3a_krawitz()-kraw_try1.sumprod2d(),38
+kraw_try1.type3a_krawitz()-kraw_try1.sumprod4a(),39
+kraw_try1.type3a_krawitz()-kraw_try1.type1a_krawitz(),10
+kraw_try1.type3a_krawitz()-kraw_try1.sumprod2b(),39
+kraw_try1.foo()-kraw_try1.foo3(),17
+kraw_try1.foo()-kraw_try1.foo2(),16
+kraw_try1.sumprod3e()-kraw_try1.sumprod4b(),10
+kraw_try1.sumprod3e()-kraw_try1.sumprod3b(),11
+kraw_try1.sumprod3e()-kraw_try1.sumprod1c(),10
+kraw_try1.sumprod3e()-kraw_try1.type2a_krawitz(),38
+kraw_try1.sumprod3e()-kraw_try1.sumprodo(),10
+kraw_try1.sumprod3e()-kraw_try1.sumprod2c(),19
+kraw_try1.sumprod3e()-kraw_try1.sumprod3c(),15
+kraw_try1.sumprod3e()-kraw_try1.sumprod2a(),11
+kraw_try1.sumprod3e()-kraw_try1.sumprod3a(),13
+kraw_try1.sumprod3e()-kraw_try1.sumprod2d(),11
+kraw_try1.sumprod3e()-kraw_try1.sumprod4a(),10
+kraw_try1.sumprod3e()-kraw_try1.type1a_krawitz(),37
+kraw_try1.sumprod3e()-kraw_try1.sumprod2b(),11
+kraw_try1.sumprod3e()-kraw_try1.sumprod4d(),30
+kraw_try1.sumprod3e()-kraw_try1.type3a_krawitz(),38
+kraw_try1.type1b_krawitz()-kraw_try1.sumprod3b(),39
+kraw_try1.type1b_krawitz()-kraw_try1.sumprod1c(),39
+kraw_try1.type1b_krawitz()-kraw_try1.type2a_krawitz(),10
+kraw_try1.type1b_krawitz()-kraw_try1.sumprodo(),39
+kraw_try1.type1b_krawitz()-kraw_try1.sumprod2c(),34
+kraw_try1.type1b_krawitz()-kraw_try1.sumprod3c(),36
+kraw_try1.type1b_krawitz()-kraw_try1.sumprod3a(),38
+kraw_try1.type1b_krawitz()-kraw_try1.sumprod2d(),39
+kraw_try1.type1b_krawitz()-kraw_try1.sumprod4a(),39
+kraw_try1.type1b_krawitz()-kraw_try1.type1a_krawitz(),0
+kraw_try1.type1b_krawitz()-kraw_try1.sumprod2b(),39
+kraw_try1.type1b_krawitz()-kraw_try1.type3a_krawitz(),10
+kraw_try1.type1b_krawitz()-kraw_try1.sumprod3e(),37
+kraw_try1.sumprod3d()-kraw_try1.sumprod4b(),6
+kraw_try1.sumprod3d()-kraw_try1.sumprod3b(),6
+kraw_try1.sumprod3d()-kraw_try1.sumprod1c(),6
+kraw_try1.sumprod3d()-kraw_try1.sumprodo(),6
+kraw_try1.sumprod3d()-kraw_try1.sumprod2c(),15
+kraw_try1.sumprod3d()-kraw_try1.sumprod3c(),14
+kraw_try1.sumprod3d()-kraw_try1.sumprod2a(),8
+kraw_try1.sumprod3d()-kraw_try1.sumprod3a(),10
+kraw_try1.sumprod3d()-kraw_try1.sumprod2d(),8
+kraw_try1.sumprod3d()-kraw_try1.sumprod4a(),7
+kraw_try1.sumprod3d()-kraw_try1.sumprod2b(),8
+kraw_try1.sumprod3d()-kraw_try1.sumprod4d(),22
+kraw_try1.sumprod3d()-kraw_try1.sumprod3e(),14
+kraw_try1.sumprod4c()-kraw_try1.sumprod4b(),10
+kraw_try1.sumprod4c()-kraw_try1.sumprod3b(),9
+kraw_try1.sumprod4c()-kraw_try1.sumprod1c(),10
+kraw_try1.sumprod4c()-kraw_try1.type2a_krawitz(),38
+kraw_try1.sumprod4c()-kraw_try1.sumprodo(),10
+kraw_try1.sumprod4c()-kraw_try1.sumprod2c(),15
+kraw_try1.sumprod4c()-kraw_try1.sumprod3c(),13
+kraw_try1.sumprod4c()-kraw_try1.sumprod2a(),10
+kraw_try1.sumprod4c()-kraw_try1.sumprod3a(),10
+kraw_try1.sumprod4c()-kraw_try1.sumprod2d(),11
+kraw_try1.sumprod4c()-kraw_try1.sumprod4a(),10
+kraw_try1.sumprod4c()-kraw_try1.type1a_krawitz(),39
+kraw_try1.sumprod4c()-kraw_try1.sumprod2b(),10
+kraw_try1.sumprod4c()-kraw_try1.sumprod4d(),24
+kraw_try1.sumprod4c()-kraw_try1.type3a_krawitz(),38
+kraw_try1.sumprod4c()-kraw_try1.sumprod3e(),15
+kraw_try1.sumprod4c()-kraw_try1.type1b_krawitz(),39
+kraw_try1.sumprod4c()-kraw_try1.sumprod3d(),6
+kraw_try1.type3b_krawitz()-kraw_try1.type2a_krawitz(),31
+kraw_try1.type3b_krawitz()-kraw_try1.type1a_krawitz(),27
+kraw_try1.type3b_krawitz()-kraw_try1.type3a_krawitz(),30
+kraw_try1.type3b_krawitz()-kraw_try1.type1b_krawitz(),26
+kraw_try1.sumprod1a()-kraw_try1.sumprod4b(),1
+kraw_try1.sumprod1a()-kraw_try1.sumprod3b(),2
+kraw_try1.sumprod1a()-kraw_try1.sumprod1c(),0
+kraw_try1.sumprod1a()-kraw_try1.type2a_krawitz(),39
+kraw_try1.sumprod1a()-kraw_try1.sumprodo(),1
+kraw_try1.sumprod1a()-kraw_try1.sumprod2c(),15
+kraw_try1.sumprod1a()-kraw_try1.sumprod3c(),10
+kraw_try1.sumprod1a()-kraw_try1.sumprod2a(),2
+kraw_try1.sumprod1a()-kraw_try1.sumprod3a(),4
+kraw_try1.sumprod1a()-kraw_try1.sumprod2d(),3
+kraw_try1.sumprod1a()-kraw_try1.sumprod4a(),0
+kraw_try1.sumprod1a()-kraw_try1.type1a_krawitz(),39
+kraw_try1.sumprod1a()-kraw_try1.sumprod2b(),3
+kraw_try1.sumprod1a()-kraw_try1.sumprod4d(),22
+kraw_try1.sumprod1a()-kraw_try1.type3a_krawitz(),39
+kraw_try1.sumprod1a()-kraw_try1.sumprod3e(),10
+kraw_try1.sumprod1a()-kraw_try1.type1b_krawitz(),39
+kraw_try1.sumprod1a()-kraw_try1.sumprod3d(),6
+kraw_try1.sumprod1a()-kraw_try1.sumprod4c(),10
+kraw_try1.sumprod1b()-kraw_try1.sumprod4b(),0
+kraw_try1.sumprod1b()-kraw_try1.sumprod3b(),2
+kraw_try1.sumprod1b()-kraw_try1.sumprod1c(),0
+kraw_try1.sumprod1b()-kraw_try1.type2a_krawitz(),39
+kraw_try1.sumprod1b()-kraw_try1.sumprodo(),1
+kraw_try1.sumprod1b()-kraw_try1.sumprod2c(),15
+kraw_try1.sumprod1b()-kraw_try1.sumprod3c(),10
+kraw_try1.sumprod1b()-kraw_try1.sumprod2a(),2
+kraw_try1.sumprod1b()-kraw_try1.sumprod3a(),5
+kraw_try1.sumprod1b()-kraw_try1.sumprod2d(),3
+kraw_try1.sumprod1b()-kraw_try1.sumprod4a(),1
+kraw_try1.sumprod1b()-kraw_try1.type1a_krawitz(),39
+kraw_try1.sumprod1b()-kraw_try1.sumprod2b(),2
+kraw_try1.sumprod1b()-kraw_try1.sumprod4d(),22
+kraw_try1.sumprod1b()-kraw_try1.type3a_krawitz(),39
+kraw_try1.sumprod1b()-kraw_try1.sumprod3e(),10
+kraw_try1.sumprod1b()-kraw_try1.type1b_krawitz(),39
+kraw_try1.sumprod1b()-kraw_try1.sumprod3d(),6
+kraw_try1.sumprod1b()-kraw_try1.sumprod4c(),10
+kraw_try1.sumprod1b()-kraw_try1.sumprod1a(),0
+kraw_try1.type2b_krawitz()-kraw_try1.sumprod3b(),39
+kraw_try1.type2b_krawitz()-kraw_try1.sumprod1c(),39
+kraw_try1.type2b_krawitz()-kraw_try1.type2a_krawitz(),11
+kraw_try1.type2b_krawitz()-kraw_try1.sumprodo(),39
+kraw_try1.type2b_krawitz()-kraw_try1.sumprod2c(),34
+kraw_try1.type2b_krawitz()-kraw_try1.sumprod3c(),36
+kraw_try1.type2b_krawitz()-kraw_try1.sumprod3a(),38
+kraw_try1.type2b_krawitz()-kraw_try1.sumprod2d(),39
+kraw_try1.type2b_krawitz()-kraw_try1.sumprod4a(),39
+kraw_try1.type2b_krawitz()-kraw_try1.type1a_krawitz(),1
+kraw_try1.type2b_krawitz()-kraw_try1.sumprod2b(),39
+kraw_try1.type2b_krawitz()-kraw_try1.type3a_krawitz(),11
+kraw_try1.type2b_krawitz()-kraw_try1.sumprod3e(),37
+kraw_try1.type2b_krawitz()-kraw_try1.type1b_krawitz(),1
+kraw_try1.type2b_krawitz()-kraw_try1.sumprod4c(),39
+kraw_try1.type2b_krawitz()-kraw_try1.type3b_krawitz(),26
+kraw_try1.type2b_krawitz()-kraw_try1.sumprod1a(),39
+kraw_try1.type2b_krawitz()-kraw_try1.sumprod1b(),39
