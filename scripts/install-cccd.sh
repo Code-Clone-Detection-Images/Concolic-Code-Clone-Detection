@@ -4,8 +4,16 @@ cd "$HOME_FOLDER"
 
 echo " - Installing CCCD base"
 
-if [ "$DO_CIL_PATCH" = "YES" ]
-then
+if [ "$DO_CIL_PATCH" = "MAY" ]; then
+   # TODO: different patchings
+   if [ "$CREST_VERSION" = "0.1.2" ]; then TMP_CIL="NO"; else TMP_CIL="YES"; fi
+else
+   TMP_CIL=$DO_CIL_PATCH
+fi
+
+echo "   * cil patch result: $TMP_CIL"
+
+if [ "$TMP_CIL" = "YES" ]; then
 echo "   - Updating cil custom location [source base: '$CCCD_DIRTY'; target: '$HOME_FOLDER/$CREST_FOLDER/cil/src/']"
 
 cd "$CCCD_DIRTY"
@@ -67,9 +75,12 @@ sed -i 's/(new descriptiveCilPrinterClass true)/(new descriptiveCilPrinterClass)
 
 # Old Debug stuff: (i keep this, because i needed it probably a hundred times)
 # cat -n bashScripts/customfiles/cil.ml | head -n4820 | tail -n10
-
+cp bashScripts/customfiles/cil.ml "$HOME_FOLDER/$CREST_FOLDER/cil/src/"
+else
+cd "$CCCD_DIRTY"
 cp bashScripts/customfiles/cil.ml "$HOME_FOLDER/$CREST_FOLDER/cil/src/"
 fi # patch toggle as i still do not like the modifications
+
 
 echo "    - installing cil"
 cd "$HOME_FOLDER/$CREST_FOLDER/cil"
@@ -102,6 +113,7 @@ sh /install-yices.sh "/$YICES" --prefix "$YICES_TARGET" --libdir=$YICES_LIB
 
 cd "$HOME_FOLDER/$CREST_FOLDER/cil"
 
+if [ "$TMP_CIL" = "YES" ]; then
 # after countless of tries (and hours) it turns out, that perfcount.c.in has an error when used with C99 "inline"
 # we ahve to patch 'ocamlutil>perfcount.c.in' regarding line 59
 sed -i '59s/.*/unsigned longlong read_ppc(void);/' ocamlutil/perfcount.c.in
@@ -113,6 +125,7 @@ sed -i '59s/.*/unsigned longlong read_ppc(void);/' ocamlutil/perfcount.c.in
 # in line 1879 solid. We will append the necessary definitions simiar to the alias inject:
 # alias gcc='gcc -std=gnu++98 -D _Float128=double'; Note: i try it without '-std=gnu++98' after it works somewhat with it
 sed -i "1879s/.*/      CPP =>  [@native_cc, '-D_GNUCC', '-E', '-D_Float128=double'],/" ../cil/lib/Cilly.pm
+fi
 
 ./configure
 make

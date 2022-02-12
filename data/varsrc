@@ -2,10 +2,6 @@
 # Exit immediately if command nonzero
 set -eu
 
-CREST_VERSION=0.1.1
-CREST_FILE="crest-$CREST_VERSION.tar.gz"
-CREST_FOLDER="$(basename $CREST_FILE .tar.gz)"
-
 CTAGS_VERSION=5.8
 CTAGS_BUILD=1.i386
 CTAGS_FILE="ctags-$CTAGS_VERSION-$CTAGS_BUILD.rpm"

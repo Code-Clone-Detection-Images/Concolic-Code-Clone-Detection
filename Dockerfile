@@ -19,10 +19,17 @@ ENV CCCD_DIRTY="$HOME_FOLDER/dk-crest-java/trunk/ dk-crest-java --username dek78
 COPY scripts/install-java.sh /
 RUN chmod +x /install-java.sh && /install-java.sh
 
+
 # https://github.com/erimcg/ChewTPTP/tree/master/ChewTPTP
 ARG YICES=yices-1.0.13-x86_64-pc-linux-gnu.tar.gz
+# currently i am not able to get 0.1.2 to work
+ARG CREST_VERSION=0.1.1
+ARG CREST_FILE="crest-$CREST_VERSION.tar.gz"
+ENV CREST_FOLDER="crest-$CREST_VERSION"
 # I call this extra to allow caching to work on the ocaml setup and stuff.
-COPY scripts/setup-crest.sh offline/$YICES offline/install-yices.sh /
+# Note: we use '[t]' to allow the CREST_FILE to be nonexistent (then it will be downloaded)
+# see: https://stackoverflow.com/questions/31528384/conditional-copy-add-in-dockerfile
+COPY of[f]line/$CREST_FILE scripts/setup-crest.sh offline/$YICES offline/install-yices.sh /
 RUN chmod +x /setup-crest.sh && /setup-crest.sh
 
 COPY scripts/setup-ctags.sh /
@@ -31,8 +38,11 @@ RUN chmod +x /setup-ctags.sh && /setup-ctags.sh
 COPY scripts/setup-cccd.sh offline/cccd.zip /
 RUN chmod +x /setup-cccd.sh && /setup-cccd.sh
 
-# use "YES" to run (anything else will be false); without will not produce any ratings, but at least it breaks free from dirty patching
-ARG DO_CIL_PATCH="YES"
+# use "YES" to always run;
+# use "MAY" to run dependent on the CREST version
+# use anything else to prohibit run
+# without there may be no ratings, but at least it breaks free from dirty patching
+ARG DO_CIL_PATCH="MAY"
 # The goal is to have all downloads to be completed here (except for the yices installer shell script. This
 # May be a todo)
 # Furthermore, all the previeous steps consume >5min and i have to perform a lot of interface mods from now on...
