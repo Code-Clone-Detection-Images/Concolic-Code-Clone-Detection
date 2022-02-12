@@ -111,8 +111,8 @@ sed -i '59s/.*/unsigned longlong read_ppc(void);/' ocamlutil/perfcount.c.in
 # seems to be broken since around 2018 (https://github.com/samee/obliv-c/issues/48)
 # any alias injection fails. Therefore we will modify Cilly.pm as it is the core module defining CPP
 # in line 1879 solid. We will append the necessary definitions simiar to the alias inject:
-# alias gcc='gcc -std=gnu++98 -D _Float128=double'
-sed -i "1879s/.*/      CPP =>  [@native_cc, '-D_GNUCC', '-E', '-std=gnu++98', '-D _Float128=double'],/" ../cil/lib/Cilly.pm
+# alias gcc='gcc -std=gnu++98 -D _Float128=double'; Note: i try it without '-std=gnu++98' after it works somewhat with it
+sed -i "1879s/.*/      CPP =>  [@native_cc, '-D_GNUCC', '-E', '-std=c++17', '-D_Float128=double'],/" ../cil/lib/Cilly.pm
 
 ./configure
 make

@@ -42,8 +42,6 @@ RUN chmod +x /install-cccd.sh && /install-cccd.sh
 COPY scripts/patching.sh data/cccd.new /
 RUN chmod +x /patching.sh && /patching.sh
 
-RUN echo "TODO: update source files"
-
 ENV CCCD_INPUT="$CCCD_DIRTY/sourceFiles/input"
 ARG TEST_NAME="$CCCD_INPUT/kraw"
 # trying caching

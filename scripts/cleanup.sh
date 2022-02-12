@@ -42,3 +42,6 @@ opam clean --yes --logs --download-cache --switch-cleanup --repo-cache --unused-
 
 echo "   - set \"\"\"permissions \"\"\" for fedora-user"
 chmod -R 777 "$HOME_FOLDER"
+
+echo " =Installed================================================ "
+dnf list installed
