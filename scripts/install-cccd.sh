@@ -27,7 +27,7 @@ sed -i 's/M.theMachine/theMachine/' bashScripts/customfiles/cil.ml
 # we do need a bool for the patch: this is necessary to provide information about bool:
 # | IBool -> !M.theMachine.M.sizeof_bool in cil.ml patch L1930
 # sed -i '76s/^/printf("\t sizeof_bool           = %d;\n", (int)sizeof(bool));\n/' "$HOME_FOLDER/$CREST_FOLDER/cil/src/machdep.c"
-# => we do not do this but kill, because machdep.c changes have a lot of aother problems
+# => we do not do this but kill, because machdep.c changes have a lot of another problems
 # same with 2101 containing alignof bool
 sed -i '1931d;2101d' bashScripts/customfiles/cil.ml
 # furthermore we guess the alignment as we do know it but have no control over its init in cil

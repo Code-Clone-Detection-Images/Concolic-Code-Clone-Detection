@@ -15,7 +15,7 @@ OUTPUT_BASENAME=$(basename "$1")
 OUTPUT_FILENAME=$(tail --lines=1 ../src/cccd-run.log)
 OUTPUT_FILENAME="$(pwd)/${OUTPUT_FILENAME/See Report at: /}"
 echo "[Done] Analyze \"$OUTPUT_FILENAME\""
-# extract file name (NOTE: input should be folder)
+# extract file name (NOTE: input should be a folder)
 cp --update "$OUTPUT_FILENAME" "$1" || true
 chmod 777 "$1"
 
