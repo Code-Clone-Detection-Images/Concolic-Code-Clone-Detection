@@ -1,0 +1,11 @@
+* CCCD
+  https://code.google.com/archive/p/dk-crest-java/
+  Licensed under the 'Apache License 2.0' (https://www.apache.org/licenses/LICENSE-2.0)
+
+* CREST
+  https://github.com/jburnim/crest
+  Licensed under the 'BSD-2-Clause "Simplified" License' (https://github.com/jburnim/crest/blob/master/LICENSE)
+
+* Yices
+  https://yices.csl.sri.com/old/yices1-documentation.html
+  Licensed under the 'GNU General Public License GPLv3'
