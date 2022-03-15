@@ -36,3 +36,5 @@ if __name__ == '__main__':
     print("======= Clones ======= ")
     print(f"Type-1: {t1}\nType-2: {t2}\nType-3: {t3}\nType-4: {t4}")
     print(f"Clones: {t1+t2+t3+t4} --- Others: {other}")
+    # it does not have to be efficient :D
+    print(f"Max-Dist: {max(mapping.values())}\nMin-Dist: {min(mapping.values())}")
